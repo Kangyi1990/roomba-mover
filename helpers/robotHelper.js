@@ -22,8 +22,9 @@ var cleanedDirt=0;
 var directions='';
 
 robotHelper.run=function(input){
-    //init cleaned dirt number
+    //init
     cleanedDirt=0;
+    dirtMap={};
 
     //validate input
     if(robotHelper.inputValidater(input)==false){
