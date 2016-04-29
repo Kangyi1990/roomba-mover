@@ -1,0 +1,15 @@
+<div>
+    <form action="/" method="post">
+        Please Provide Input:
+        <br/>
+        <textarea rows="10" cols="50" name="input" >{{input}}</textarea>
+        <input type="submit" value="Submit">
+    </form>
+
+    {{#if invalidInput}}
+        <div>Invalid Input</div>
+    {{else}}
+    <div>Final Position: {{finalPosition.x}} {{finalPosition.y}}</div>
+    <div>Cleaned patches of dirt: {{cleanedDirt}}</div>
+    {{/if}}
+</div>
